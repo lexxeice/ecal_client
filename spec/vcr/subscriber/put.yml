@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://client.e-diary.com/apiv2/subscriber/56ab1c900390694974000007?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=4b29588bc5fb8d96dee9a8f09bc2feee
+    body:
+      encoding: UTF-8
+      string: '{"gender":"M","age_group":"15-24"}'
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 08:04:48 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE9D808FF094056A0AC88D06D1567336F1707B822875AEF0A8A5795EFB81F890AF4EB73ECBCEF62C120B9299B5B74BEA19BC14FE4D06187BE56D8EC1745EDE80731;PATH=/
+      - PHPSESSID=h3lp8dr866p4l9unjm6u399bu2; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '200'
+      X-Ediary-Statusshort:
+      - OK
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '254'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"200","statusLong":"OK","subscriberId":"56ab1c900390694974000007","calendarUrl":{"webCalUrl":"webcal:\/\/e-qo.de\/nz17.ics","webCalUrlNoIcs":"webcal:\/\/e-qo.de\/nz17","httpCalUrl":"http:\/\/e-qo.de\/nz17","httpsCalUrl":"http:\/\/e-qo.de\/nz18","googleUrl":"https:\/\/www.google.com\/calendar\/render?cid=webcal:\/\/e-qo.de\/nz17.ics","outlookcomUrl":"https:\/\/calendar.live.com\/calendar\/calendar.aspx?rru=addsubscription&url=webcal:\/\/e-qo.de\/nz17.ics&name=Tinder"}}'
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 08:04:50 GMT
+recorded_with: VCR 3.0.1

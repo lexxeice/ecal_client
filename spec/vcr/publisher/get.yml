@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://client.e-diary.com/apiv2/publisher/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=2faab7ebd1bb693e3a1b9c5dbb7e662b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 07:24:35 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE918C0DBF2EDBC25D90BB09581BB05502F578A8C8C8F0B23020C542B3B949A87FF2B8F79E247FC220DB463E59F31C90F3FF7AF76C1AB6D7C1EA930B2A98E5D6CBC;PATH=/
+      - PHPSESSID=5e73a8uraoq3eje8lom2ucjop6; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '200'
+      X-Ediary-Statusshort:
+      - OK
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '315'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"11319":{"id":"11319","email":"abc@gmail.com","firstName":"a","lastName":"b","dateCreated":"2016-01-27
+        03:34:16","status":"active","organisationId":"3231","mobile":"01677777777","subscriptionLevel":"Free","custom_event_limit":"0","affiliate_id":"eCal","affiliate_name":"eCal","verify":"N","last_login":"2016-01-29
+        18:13:10","subscription_plan_id":"14","subscriber_limit":"5000","calendar_limit":"-1","country":null,"timezone":"Asia\/Kuala_Lumpur"}},"count":1,"status":"200","statusLong":"OK"}'
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 07:24:36 GMT
+recorded_with: VCR 3.0.1

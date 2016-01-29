@@ -2,10 +2,11 @@
 http_interactions:
 - request:
     method: post
-    uri: http://client.e-diary.com/apiv2/organisation/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=b34bfa6dc0fb9dbc292a89ce52c0c269
+    uri: http://client.e-diary.com/apiv2/event/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=888e9ead59842ecd54661a57f2f4fc24
     body:
       encoding: UTF-8
-      string: '{"company":"Tinder","firstName":"James","lastName":"Blunt","email":"ginger1@gmail.com"}'
+      string: '{"calendarId":"56a7a008039069d866000000","name":"Liga Tennis","startDate":"2016-08-29","startTime":"18:00","endDate":"2016-08-30","endTime":"19:00","reference":"sport
+        1","alert":"15M","details":"This is a test fixture event","draft":0}'
     headers:
       User-Agent:
       - Ecal Client SDK
@@ -27,7 +28,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 29 Jan 2016 07:11:02 GMT
+      - Fri, 29 Jan 2016 08:12:01 GMT
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Pragma:
@@ -35,8 +36,8 @@ http_interactions:
       Server:
       - Apache/2.2.31 (Amazon)
       Set-Cookie:
-      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE926DF8E00E8A14EE05A67D60AF144149DAFC441E89BB270869AA09AC271A68C19F1B5C23D031F4A313EF606D91A55BEA8F418DB5CD0CCAD8386FCA74C54268B32;PATH=/
-      - PHPSESSID=f9cqsvnijnjfomcuatok153572; path=/
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE9535690EC5840BA84383E1E7D7C32135166C1CFA666CE1E1C89ED199CF6FF4243EB73ECBCEF62C120B9299B5B74BEA19BC14FE4D06187BE56D8EC1745EDE80731;PATH=/
+      - PHPSESSID=d28b9eaqqi9akhmuku7apggff3; path=/
       Vary:
       - Accept-Encoding
       X-Ediary-Status:
@@ -46,21 +47,23 @@ http_interactions:
       X-Powered-By:
       - PHP/5.3.29
       Content-Length:
-      - '146'
+      - '108'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"400","statusLong":"Invalid Publisher Data","errors":["Email
-        [ginger1@gmail.com] already exists. Please try different email address"]}'
+      string: '{"status":"400","statusLong":"Invalid Event Data","errors":{"location":"Event
+        location is required"}}'
     http_version: 
-  recorded_at: Fri, 29 Jan 2016 07:11:02 GMT
+  recorded_at: Fri, 29 Jan 2016 08:12:02 GMT
 - request:
     method: post
-    uri: http://client.e-diary.com/apiv2/organisation/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=3cde116f975deb3d896f9d39d3f195d2
+    uri: http://client.e-diary.com/apiv2/event/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=569008789000a4b12ce668b64af23a97
     body:
       encoding: UTF-8
-      string: '{"company":"Tinder","firstName":"James","lastName":"Blunt","email":"ginger3@gmail.com"}'
+      string: '{"calendarId":"56a7a008039069d866000000","location":"ECAL HQ 4 Bank
+        Place Melbourne","name":"Liga Tennis","startDate":"2016-08-29","startTime":"18:00","endDate":"2016-08-30","endTime":"19:00","reference":"sport
+        1","alert":"15M","details":"This is a test fixture event","draft":0}'
     headers:
       User-Agent:
       - Ecal Client SDK
@@ -82,7 +85,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 29 Jan 2016 07:11:32 GMT
+      - Fri, 29 Jan 2016 08:12:30 GMT
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Pragma:
@@ -90,8 +93,8 @@ http_interactions:
       Server:
       - Apache/2.2.31 (Amazon)
       Set-Cookie:
-      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE9E99F88E50088A86ACF3FBEFCD0DDD2666FDC69564CD107E36B9623488EDC43536632C16380F2C2414692D1CECE7EFAECA6AA3CAE1DDC8455AFE6280F68CF9B15;PATH=/
-      - PHPSESSID=susdv26n3l48k37hhct40apvr5; path=/
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE9D94BB9462E5E5BA7A4300DD24765A222DDA0E47E93A9E6B549B2BDBB9DC3D4061CBDE63CEB2B19B7E84A227470DF02BB55F5FAFB511A2A5503FDCC1642B38269;PATH=/
+      - PHPSESSID=9j782dk39dkildvkf74mk9c4s7; path=/
       Vary:
       - Accept-Encoding
       X-Ediary-Status:
@@ -101,13 +104,12 @@ http_interactions:
       X-Powered-By:
       - PHP/5.3.29
       Content-Length:
-      - '215'
+      - '86'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"200","statusLong":"OK","organisationId":"3257","publisherId":"11345","username":"ginger3@gmail.com","password":"vnccomhz","apiKey":"b435174f37d3377bc8eff15a6503ad6a56ab10a495e65","apiSecret":"s73boxy7","dateExpiry":"2016-02-26
-        03:34:16"}'
+      string: '{"status":"200","statusLong":"OK","eventId":"56ab1eee7f4b3fad35000008"}'
     http_version: 
-  recorded_at: Fri, 29 Jan 2016 07:11:33 GMT
+  recorded_at: Fri, 29 Jan 2016 08:12:31 GMT
 recorded_with: VCR 3.0.1

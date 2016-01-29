@@ -25,7 +25,10 @@ module EcalClient
 
     def put(options)
       raise Unsupported unless supported?(:put)
-      response = put_call(@endpoint, {}, options, headers)
+      id = options.delete(:id)
+      endpoint = @endpoint
+      endpoint += id.to_s if id
+      response = put_call(endpoint, {}, options, headers)
       Response.new(response)
     end
 

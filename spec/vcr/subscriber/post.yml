@@ -1,0 +1,225 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://client.e-diary.com/apiv2/calendar/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=fc5b4d4096d789b593437682d2f93b5b
+    body:
+      encoding: UTF-8
+      string: '{"category":"Calendar","application":"ical","calendarIds":["56a7a008039069d866000000"]}'
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 07:58:37 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE9B9E1B6E78C3A85D5826070DFCF2904BD7BFB44E04C63C779A9C5A71EF66F24A4EB73ECBCEF62C120B9299B5B74BEA19BC14FE4D06187BE56D8EC1745EDE80731;PATH=/
+      - PHPSESSID=99saj4q9r82geln7kgkeb6rbn0; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '400'
+      X-Ediary-Statusshort:
+      - Bad Request
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '180'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"400","statusLong":"Invalid Calendar Data","errors":{"name":"Calendar
+        name is required","type":"Calendar type is required. Available Types are fixture,event,media,corporate,birthday,tactical","categories":"Calendar
+        category is required."}}'
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 07:58:38 GMT
+- request:
+    method: post
+    uri: http://client.e-diary.com/apiv2/calendar/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=22f82ef420f2feadb0f49e06a35809e6
+    body:
+      encoding: UTF-8
+      string: '{"email":"test_subscriber@exmaple.com","category":"Calendar","application":"ical","calendarIds":["56a7a008039069d866000000"]}'
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 08:00:54 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE90C9E82AA249DC9B9C6B2DB15B947BCDEAA05C95B26787CF8211C803B5B49A61E58860FE7FC816C82EF1A89CF7582EFCB06696245F2DDC7CD4035F9AF5D9DF83D;PATH=/
+      - PHPSESSID=gl2009ti5efjcmtnp0da0c7jm2; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '400'
+      X-Ediary-Statusshort:
+      - Bad Request
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '180'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"400","statusLong":"Invalid Calendar Data","errors":{"name":"Calendar
+        name is required","type":"Calendar type is required. Available Types are fixture,event,media,corporate,birthday,tactical","categories":"Calendar
+        category is required."}}'
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 08:00:55 GMT
+- request:
+    method: post
+    uri: http://client.e-diary.com/apiv2/calendar/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=297a0da5fd244f151c13a8951874c760
+    body:
+      encoding: UTF-8
+      string: '{"email":"test_subscriber@exmaple.com","category":"Mobile","application":"iphone","calendarIds":["56a7a008039069d866000000"]}'
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 08:01:51 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE99DA7BC5E24B21EBE7BE429BD2D09083C107F746EC5FD799E128AC5188A71249B6632C16380F2C2414692D1CECE7EFAECA6AA3CAE1DDC8455AFE6280F68CF9B15;PATH=/
+      - PHPSESSID=t3kb2hoqmabtorg0skb37l9a23; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '400'
+      X-Ediary-Statusshort:
+      - Bad Request
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '180'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"400","statusLong":"Invalid Calendar Data","errors":{"name":"Calendar
+        name is required","type":"Calendar type is required. Available Types are fixture,event,media,corporate,birthday,tactical","categories":"Calendar
+        category is required."}}'
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 08:01:58 GMT
+- request:
+    method: post
+    uri: http://client.e-diary.com/apiv2/subscriber/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=297a0da5fd244f151c13a8951874c760
+    body:
+      encoding: UTF-8
+      string: '{"email":"test_subscriber@exmaple.com","category":"Mobile","application":"iphone","calendarIds":["56a7a008039069d866000000"]}'
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 08:02:24 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE9B4B1DD981CB14BA6DDCE2981B2646AF4CA75910CE7204E3438AD17087045038158860FE7FC816C82EF1A89CF7582EFCB06696245F2DDC7CD4035F9AF5D9DF83D;PATH=/
+      - PHPSESSID=ng7s79akn5nkq6hmn52p3pg3o3; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '200'
+      X-Ediary-Statusshort:
+      - OK
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '254'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"200","statusLong":"OK","subscriberId":"56ab1c900390694974000007","calendarUrl":{"webCalUrl":"webcal:\/\/e-qo.de\/nz17.ics","webCalUrlNoIcs":"webcal:\/\/e-qo.de\/nz17","httpCalUrl":"http:\/\/e-qo.de\/nz17","httpsCalUrl":"http:\/\/e-qo.de\/nz18","googleUrl":"https:\/\/www.google.com\/calendar\/render?cid=webcal:\/\/e-qo.de\/nz17.ics","outlookcomUrl":"https:\/\/calendar.live.com\/calendar\/calendar.aspx?rru=addsubscription&url=webcal:\/\/e-qo.de\/nz17.ics&name=Tinder"}}'
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 08:02:28 GMT
+recorded_with: VCR 3.0.1

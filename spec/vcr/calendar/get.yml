@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://client.e-diary.com/apiv2/organisation/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=2faab7ebd1bb693e3a1b9c5dbb7e662b
+    uri: http://client.e-diary.com/apiv2/calendar/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=2faab7ebd1bb693e3a1b9c5dbb7e662b
     body:
       encoding: US-ASCII
       string: ''
@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 29 Jan 2016 07:12:27 GMT
+      - Fri, 29 Jan 2016 07:27:50 GMT
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Pragma:
@@ -35,8 +35,8 @@ http_interactions:
       Server:
       - Apache/2.2.31 (Amazon)
       Set-Cookie:
-      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE9BD82F4D3B189E7037F24FD9677ADF1F29D12CBEEC58220BF8642A1DB8F750B3715443451D650B8139CDF148AEC544C0B55F5FAFB511A2A5503FDCC1642B38269;PATH=/
-      - PHPSESSID=3nfe62a2fh5uum8alq5u8ht7i0; path=/
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE94E39AA4F10BD4BB550E7B59CE63BB0947FD78FE92B4C3507F8402B2D139B9C082D63D44D3F77DA6FECDFBFE1F43DDE1702D1A47447FA186BF981973BBF735B4E;PATH=/
+      - PHPSESSID=08hhbflb8okrnedricm9i91n06; path=/
       Vary:
       - Accept-Encoding
       X-Ediary-Status:
@@ -46,12 +46,13 @@ http_interactions:
       X-Powered-By:
       - PHP/5.3.29
       Content-Length:
-      - '172'
+      - '290'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"data":{"3231":{"id":"3231","name":"Tinder","status":"public","shortname":"","parentOrgId":"0","sortOrder":"0"},"child":{"3251":{"id":"3251","name":"Tinder","status":"public","shortname":"","parentOrgId":"3231","sortOrder":"0"},"3256":{"id":"3256","name":"Tinder","status":"public","shortname":"","parentOrgId":"3231","sortOrder":"0"},"3257":{"id":"3257","name":"Tinder","status":"public","shortname":"","parentOrgId":"3231","sortOrder":"0"}}},"count":4,"status":"200","statusLong":"OK"}'
+      string: '{"data":{"56a7a008039069d866000000":{"id":"56a7a008039069d866000000","type":"fixture","typeOrder":1,"eventId":"","publisherId":11319,"publisherOrgId":3231,"name":"DEMO:
+        TidyHQ Calendar","logo":false,"note":"","categories":["Uncategorized"],"categoryIds":[],"stats":[],"feed":"","genreId":"","sport":"","tags":["Events"],"draftCalendar":0,"reference":null,"created":"2016-01-26T16:34:16Z"}},"count":1,"status":"200","statusLong":"OK"}'
     http_version: 
-  recorded_at: Fri, 29 Jan 2016 07:12:28 GMT
+  recorded_at: Fri, 29 Jan 2016 07:27:51 GMT
 recorded_with: VCR 3.0.1

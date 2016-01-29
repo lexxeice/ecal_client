@@ -1,0 +1,173 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://client.e-diary.com/apiv2/event/56a7a008039069d866000000?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=2faab7ebd1bb693e3a1b9c5dbb7e662b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Length:
+      - '82'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 08:05:46 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE929C626DBA0706D6580E3A9387D5918F76770538DA9AC258C24A41A87C284126495D41646782AEA95A01102304F059A1B9DAC2957F723501F8637C0B56391C450;PATH=/
+      - PHPSESSID=i6oh9u801gima8k4c55a4if3l5; path=/
+      X-Ediary-Status:
+      - '204'
+      X-Ediary-Statuslong:
+      - Event with ID [56a7a008039069d866000000] Not Found
+      X-Ediary-Statusshort:
+      - No Content Found
+      X-Powered-By:
+      - PHP/5.3.29
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 08:05:48 GMT
+- request:
+    method: get
+    uri: http://client.e-diary.com/apiv2/event/56a7a008039069d866000001?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=2faab7ebd1bb693e3a1b9c5dbb7e662b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 08:11:56 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE956C40D29EA5F69E147989BD55E5CAD741FEBF8FFA201B6D823361B3EFA61CDF7EB73ECBCEF62C120B9299B5B74BEA19BC14FE4D06187BE56D8EC1745EDE80731;PATH=/
+      - PHPSESSID=lo2e8kidtlut0kbr135548lg76; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '200'
+      X-Ediary-Statusshort:
+      - OK
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '656'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"56a7a008039069d866000001","alert":"1H","alert2":"","allDay":"","calendarId":"56a7a008039069d866000000","created":"2016-01-26T16:34:16Z","details":"Here
+        you put all the important details about the event","draft":0,"endDate":"2016-02-10","endGmt":"20160210T070000Z","endTime":"15:00","event_banner":"","featured":0,"focus-x":"","focus-y":"","location":"TidyHQ
+        HQ","modified":"2016-01-28T05:06:37Z","name":"DEMO: TidyHQ Event","primary_link":"1","publisherId":11319,"publisherOrgId":3231,"quickLink[10][name]":"","quickLink[10][original_url]":"","quickLink[10][url]":"","quickLink[1][name]":"","quickLink[1][original_url]":"","quickLink[1][url]":"","quickLink[2][name]":"","quickLink[2][original_url]":"","quickLink[2][url]":"","quickLink[3][name]":"","quickLink[3][original_url]":"","quickLink[3][url]":"","quickLink[4][name]":"","quickLink[4][original_url]":"","quickLink[4][url]":"","quickLink[5][name]":"","quickLink[5][original_url]":"","quickLink[5][url]":"","quickLink[6][name]":"","quickLink[6][original_url]":"","quickLink[6][url]":"","quickLink[7][name]":"","quickLink[7][original_url]":"","quickLink[7][url]":"","quickLink[8][name]":"","quickLink[8][original_url]":"","quickLink[8][url]":"","quickLink[9][name]":"","quickLink[9][original_url]":"","quickLink[9][url]":"","reference":"","secondary_link":"2","shortUrl":"","social":{"facebook":"https:\/\/www.facebook.com\/ECALworld","twitter":"@ECALworld","youtube":"http:\/\/www.youtube.com\/Ecaltv"},"sponsored_message":"","startDate":"2016-02-10","startGmt":"20160210T040000Z","startTime":"12:00","tags":["Demo"],"timezone":"Asia\/Kuala_Lumpur","twitterTag":"","type":"fixture","startDateFull":"2016-02-10T12:00:00+08:00","due":"12
+        days","endDateFull":"2016-02-10T15:00:00+08:00"},"status":"200","statusLong":"OK"}'
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 08:11:59 GMT
+- request:
+    method: get
+    uri: http://client.e-diary.com/apiv2/event/56ab1eee7f4b3fad35000008?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=2faab7ebd1bb693e3a1b9c5dbb7e662b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 08:13:13 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE929D1F6F6B0EA393AFD3DC9D1A02A5C307E91920CBAF4FF3FC7E762D02E502CE69A7DF7785F42E065A1AA624920CCF70FED198861103BBF06B5690267991F5B0A;PATH=/
+      - PHPSESSID=h2tfl4tkm8qolfpct2nbrtmf02; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '200'
+      X-Ediary-Statusshort:
+      - OK
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '605'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"56ab1eee7f4b3fad35000008","type":"fixture","name":"Liga
+        Tennis","publisherId":11319,"publisherOrgId":3231,"calendarId":"56a7a008039069d866000000","twitterTag":"","location":"ECAL
+        HQ 4 Bank Place Melbourne","startDate":"2016-08-29","startTime":"18:00","endDate":"2016-08-30","endTime":"19:00","allDay":"","timezone":"Asia\/Kuala_Lumpur","alert":"15M","alert2":"","details":"This
+        is a test fixture event","draft":0,"quickLink[1][name]":"","quickLink[1][url]":"","quickLink[1][original_url]":"","quickLink[2][name]":"","quickLink[2][url]":"","quickLink[2][original_url]":"","quickLink[3][name]":"","quickLink[3][url]":"","quickLink[3][original_url]":"","quickLink[4][name]":"","quickLink[4][url]":"","quickLink[4][original_url]":"","quickLink[5][name]":"","quickLink[5][url]":"","quickLink[5][original_url]":"","quickLink[6][name]":"","quickLink[6][url]":"","quickLink[6][original_url]":"","quickLink[7][name]":"","quickLink[7][url]":"","quickLink[7][original_url]":"","quickLink[8][name]":"","quickLink[8][url]":"","quickLink[8][original_url]":"","quickLink[9][name]":"","quickLink[9][url]":"","quickLink[9][original_url]":"","quickLink[10][name]":"","quickLink[10][url]":"","quickLink[10][original_url]":"","shortUrl":"","social":[],"featured":0,"tags":[],"reference":"sport
+        1","event_banner":"","focus-x":"","focus-y":"","primary_link":1,"secondary_link":2,"sponsored_message":"","startGmt":"20160829T100000Z","endGmt":"20160830T110000Z","created":"2016-01-29T08:12:30Z","startDateFull":"2016-08-29T18:00:00+08:00","due":"213
+        days","endDateFull":"2016-08-30T19:00:00+08:00"},"status":"200","statusLong":"OK"}'
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 08:13:14 GMT
+recorded_with: VCR 3.0.1

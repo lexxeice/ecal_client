@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: put
-    uri: http://client.e-diary.com/apiv2/organisation/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=8649aa58e8637263eaf0911a6b64359a
+    uri: http://client.e-diary.com/apiv2/publisher/56ab169d7f4b3f3937000007?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=e1e42be1c655fff9946719818489af2c
     body:
       encoding: UTF-8
-      string: '{"company":"Tinder","logo":"http://ecal.net/site-logo.png"}'
+      string: '{"categories":"sports/tennis","name":"FZ-Modified"}'
     headers:
       User-Agent:
       - Ecal Client SDK
@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 29 Jan 2016 07:24:34 GMT
+      - Fri, 29 Jan 2016 07:41:53 GMT
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Pragma:
@@ -35,8 +35,8 @@ http_interactions:
       Server:
       - Apache/2.2.31 (Amazon)
       Set-Cookie:
-      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE9DDEB658E29299B72904B34172A40BF670DFB7A192B0AF1D0DF5810BA58F27B1519919378BB5584A9D79E46982A36B30CB7AEF035597070C4BAD8D397581122E8;PATH=/
-      - PHPSESSID=mvktkdh99njlssvhem7ct87kg3; path=/
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE939CCC33749B2E6890EBC5C2EDD828E0F7394BD426C5545A4737079E72C33C5D02D63D44D3F77DA6FECDFBFE1F43DDE1702D1A47447FA186BF981973BBF735B4E;PATH=/
+      - PHPSESSID=j3cf00hnj0acfrkupqpcqtfth1; path=/
       Vary:
       - Accept-Encoding
       X-Ediary-Status:
@@ -46,12 +46,12 @@ http_interactions:
       X-Powered-By:
       - PHP/5.3.29
       Content-Length:
-      - '75'
+      - '73'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"200","statusLong":"OK","organisationId":"3231"}'
+      string: '{"status":"200","statusLong":"OK","publisherId":"11319"}'
     http_version: 
-  recorded_at: Fri, 29 Jan 2016 07:24:35 GMT
+  recorded_at: Fri, 29 Jan 2016 07:41:59 GMT
 recorded_with: VCR 3.0.1

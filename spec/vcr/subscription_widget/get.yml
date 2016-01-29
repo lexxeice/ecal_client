@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://client.e-diary.com/apiv2/subscription-widget/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=2faab7ebd1bb693e3a1b9c5dbb7e662b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Length:
+      - '62'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 07:43:36 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE98E9FA65FC362DF9B5B09D1C7322499F5CDBCEF5ADEBEB982D7C7BEF6A68874C40078C4ED88BA5C232D87A31BB8743595D73295F6D8B08F88B824068D9A6AF002;PATH=/
+      - PHPSESSID=lklm3qsuk2co0gn1pjv6v11al5; path=/
+      X-Ediary-Status:
+      - '204'
+      X-Ediary-Statuslong:
+      - Subscription Widgets Not Found
+      X-Ediary-Statusshort:
+      - No Content Found
+      X-Powered-By:
+      - PHP/5.3.29
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 07:43:36 GMT
+recorded_with: VCR 3.0.1

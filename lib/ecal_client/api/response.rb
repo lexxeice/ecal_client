@@ -14,14 +14,14 @@ module EcalClient
     end
 
     def status_long
-      @status_log ||= params['status_long']
+      @status_log ||= params['statusLong']
     end
 
     def params
       @params ||= begin
                     JSON.parse(@response.body)
                   rescue => e
-                    puts e.to_s
+                    puts e.to_s if EcalClient.configuration.options[:verbose]
                   end
       @params ||= {}
     end

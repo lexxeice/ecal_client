@@ -1,0 +1,112 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://client.e-diary.com/apiv2/calendar/11319?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=2faab7ebd1bb693e3a1b9c5dbb7e662b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 07:27:53 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE97B021A074FF31D0CED37D6129F7D8A4FF194E2FFCCD66519A7595DF1AD53375358860FE7FC816C82EF1A89CF7582EFCB06696245F2DDC7CD4035F9AF5D9DF83D;PATH=/
+      - PHPSESSID=ire8d15eot4og4cs801du8ns11; path=/
+      X-Ediary-Status:
+      - '204'
+      X-Ediary-Statuslong:
+      - Calendar with ID [11319] Not Found
+      X-Ediary-Statusshort:
+      - No Content Found
+      X-Powered-By:
+      - PHP/5.3.29
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 07:27:55 GMT
+- request:
+    method: get
+    uri: http://client.e-diary.com/apiv2/calendar/56a7a008039069d866000000?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=2faab7ebd1bb693e3a1b9c5dbb7e662b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 07:28:19 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE9122D175888412ED073AC7623D44B3BC8D2AA71D39F47563E3465A6D527C8BD161CBDE63CEB2B19B7E84A227470DF02BB55F5FAFB511A2A5503FDCC1642B38269;PATH=/
+      - PHPSESSID=se4qkellnjhkogek1966j29l23; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '200'
+      X-Ediary-Statusshort:
+      - OK
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '335'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":"56a7a008039069d866000000","type":"fixture","typeOrder":1,"eventId":"","publisherId":11319,"publisherOrgId":3231,"name":"DEMO:
+        TidyHQ Calendar","logo":false,"note":"","categories":["Uncategorized"],"categoryIds":[],"stats":[],"feed":"","genreId":"","sport":"","tags":["Events"],"draftCalendar":0,"reference":null,"created":"2016-01-26T16:34:16Z","campaignUrl":"http:\/\/e-qo.de\/nz06","webCalUrl":"webcal:\/\/e-qo.de\/nz07.ics","httpCalUrl":"http:\/\/e-qo.de\/nz07"},"status":"200","statusLong":"OK"}'
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 07:28:22 GMT
+recorded_with: VCR 3.0.1
