@@ -54,4 +54,72 @@ http_interactions:
       string: ''
     http_version: 
   recorded_at: Fri, 29 Jan 2016 04:35:48 GMT
+- request:
+    method: get
+    uri: http://client.e-diary.com/apiv2/organisation1?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=2faab7ebd1bb693e3a1b9c5dbb7e662b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Fri, 29 Jan 2016 05:07:46 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE918FDD0401DBEAD92C9D1CD5C30E56C23E469A01CD31C3D870C3FE55B9A1AFD9315443451D650B8139CDF148AEC544C0B55F5FAFB511A2A5503FDCC1642B38269;PATH=/
+      - PHPSESSID=b8kp5n6qvdb4l0nt0aq4toc8q5; path=/
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '709'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: "<html>\n<head>\n<title>ECAL</title>\n<style type=\"text/css\">\nbody
+        {margin:0;padding:0;font-family:Serif;}\n@font-face{font-family: ChollaWide;src:
+        url('/fonts/ChollaWide.otf')}\n@font-face{font-family: HelveticaNeue-CondensedBold;src:
+        url('/fonts/HelveticaNeue-CondensedBold.ttf')}\n@font-face{font-family: HelveticaNeue;src:
+        url('/fonts/HelveticaNeue.ttf')}\n</style>\n</head>\n<body>\n    <div id=\"wrapper\"
+        style=\"width:800px;height:358px;margin:auto;background-color:#27AAE2;border:1px
+        solid #FFF;-moz-border-radius:5px;-webkit-border-radius:5px;\">\n    <div
+        id=\"content\"><img src=\"/images/ecal_E_logo.png\" style=\"width:50px;height:50px;float:
+        left;padding: 5px 0px 0px 70px;\">\n      <div id=\"header\" style=\"font-family:
+        ChollaWide;font-weight: bold; width:589px;height:72px;margin:auto;margin-top:
+        27px;padding: 14px 0px 0px 90px;font-size:24px;font-weight:bold;color:#fff;\">ECAL</div>\n
+        \     <div id=\"body\" style=\"width:660px;height:169px;margin:auto;padding:10px;background-color:#FFF;color:#000;font-size:14px;\">\n
+        \     <h3 style=\"font-family: HelveticaNeue-CondensedBold\">Sorry, something
+        went wrong!</h3>\n      <p style=\"font-family: HelveticaNeue;\">ECAL is the
+        easiest way to stay up-to-date and connected. Receive team schedules, events
+        and promotions direct into your personal calendar, mobile device or desktop.
+        You choose. It's your favourite events at your fingertips!</p>\n      <p style=\"font-family:
+        HelveticaNeue\">To contact us please email support@ecal.net</p>\n    </div>\n
+        \     \n  </div>\n</div>\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 05:07:46 GMT
 recorded_with: VCR 3.0.1

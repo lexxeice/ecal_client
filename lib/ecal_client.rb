@@ -2,7 +2,7 @@ require "ecal_client/version"
 require "ecal_client/api"
 require "ecal_client/api/response"
 require "ecal_client/api/base"
-require "ecal_client/api/organisation"
+require "ecal_client/api/rest"
 
 module EcalClient
   class Configuration

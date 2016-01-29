@@ -36,7 +36,6 @@ module EcalClient
     [:post, :get, :put].each do |method|
       define_method "#{method}_call" do |action, params, body, headers|
         params.merge!(apiKey: EcalClient.configuration.key)
-        puts generate_params(params, body)
         connection.send("#{method}") do |req|
           req.url action, generate_params(params, body)
           req.body = body.to_json if body

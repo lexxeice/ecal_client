@@ -21,7 +21,7 @@ module EcalClient
       @params ||= begin
                     JSON.parse(@response.body)
                   rescue => e
-                    puts "----- #{e.to_s}"
+                    puts e.to_s
                   end
       @params ||= {}
     end

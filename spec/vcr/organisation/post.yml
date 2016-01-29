@@ -55,4 +55,59 @@ http_interactions:
         03:34:16"}'
     http_version: 
   recorded_at: Fri, 29 Jan 2016 04:35:44 GMT
+- request:
+    method: post
+    uri: http://client.e-diary.com/apiv2/organisation?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=b34bfa6dc0fb9dbc292a89ce52c0c269
+    body:
+      encoding: UTF-8
+      string: '{"company":"Tinder","firstName":"James","lastName":"Blunt","email":"ginger1@gmail.com"}'
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 05:07:47 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE99E75536376DE5767EB0C7DBA57F68B512E4B14ADC849C62EC62214361A3BC1E8B92CAF8044D4CE177D3B9D91985205ABD73295F6D8B08F88B824068D9A6AF002;PATH=/
+      - PHPSESSID=ee2uh88vmnl8n36l4j2ami6eq4; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '400'
+      X-Ediary-Statusshort:
+      - Bad Request
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '146'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"400","statusLong":"Invalid Publisher Data","errors":["Email
+        [ginger1@gmail.com] already exists. Please try different email address"]}'
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 05:07:47 GMT
 recorded_with: VCR 3.0.1

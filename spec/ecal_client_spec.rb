@@ -8,7 +8,7 @@ describe EcalClient do
   EcalClient.configure do |config|
     config.key = KEY
     config.secret = SECRET
-    config.options = { verbose: true }
+    config.options = { verbose: false }
   end
 
   before do
@@ -16,7 +16,6 @@ describe EcalClient do
   end
 
   describe "organisation" do
-
     let(:params) do
       {
         company: "Tinder",
@@ -27,12 +26,9 @@ describe EcalClient do
     end
 
     describe "#get" do
-
-
       it 'should return all', vcr: '/organisation/get' do
         response = @api.organisation.get
         expect(response.status).to eq(200)
-        puts "#{response.params}"
       end
 
       it 'should return no organisation', vcr: '/organisation/get/id' do
@@ -42,7 +38,6 @@ describe EcalClient do
     end
 
     describe "#post" do
-
       it 'should create new organisation', vcr: '/organisation/post' do
         response = @api.organisation.post(params)
         expect(response.status).to eq(200)
@@ -54,6 +49,52 @@ describe EcalClient do
         response = @api.organisation.put(company: params[:company], logo: "http://ecal.net/site-logo.png")
         expect(response.status).to eq(200)
       end
+    end
+  end
+
+  describe "publisher" do
+    describe "#get" do
+    end
+
+    describe "#put" do
+    end
+  end
+
+  describe "calendar" do
+    describe "#get" do
+    end
+
+    describe "#post" do
+    end
+
+    describe "#put" do
+    end
+  end
+
+  describe "event" do
+    describe "#get" do
+    end
+
+    describe "#post" do
+    end
+
+    describe "#put" do
+    end
+  end
+
+  describe "subscription_widget" do
+    describe "#get" do
+    end
+  end
+
+  describe "subscriber" do
+    describe "#get" do
+    end
+
+    describe "#post" do
+    end
+
+    describe "#put" do
     end
   end
 end
