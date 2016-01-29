@@ -1,2 +1,6 @@
---format documentation
 --color
+--format progress
+--backtrace
+--default-path spec
+
+
