@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://client.e-diary.com/apiv2/organisation/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=b34bfa6dc0fb9dbc292a89ce52c0c269
+    body:
+      encoding: UTF-8
+      string: '{"company":"Tinder","firstName":"James","lastName":"Blunt","email":"ginger1@gmail.com"}'
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 04:35:43 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE92913FF28E53A309AAE830D48AB901FB782D4BC531D60B24FC3003E39C55C6E9313C3872444CC394A8AA83AF1EB9F9F62B7AEF035597070C4BAD8D397581122E8;PATH=/
+      - PHPSESSID=j2jrikfi17did9sbadjrupvuj0; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '200'
+      X-Ediary-Statusshort:
+      - OK
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '215'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"200","statusLong":"OK","organisationId":"3256","publisherId":"11344","username":"ginger1@gmail.com","password":"cg46gsv7","apiKey":"82b874fb54b1dc91080cc2deb073d52556aaec2000d49","apiSecret":"8smmuk4x","dateExpiry":"2016-02-26
+        03:34:16"}'
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 04:35:44 GMT
+recorded_with: VCR 3.0.1

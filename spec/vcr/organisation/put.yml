@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://client.e-diary.com/apiv2/organisation/?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=8649aa58e8637263eaf0911a6b64359a
+    body:
+      encoding: UTF-8
+      string: '{"company":"Tinder","logo":"http://ecal.net/site-logo.png"}'
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 29 Jan 2016 04:35:48 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=BDB16725125DEE3BC52A3B367744D09145C9466CE938BAEC0C452E85D59236EE47F0A1FB958F090CE3CF30A28FF0F7419C9AA70FE6F55E8C1402D228020467D0A8AE42CC5255F5FAFB511A2A5503FDCC1642B38269;PATH=/
+      - PHPSESSID=lpd9bg2acrarmu1ds69tn4am53; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '200'
+      X-Ediary-Statusshort:
+      - OK
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"200","statusLong":"OK","organisationId":"3231"}'
+    http_version: 
+  recorded_at: Fri, 29 Jan 2016 04:35:49 GMT
+recorded_with: VCR 3.0.1

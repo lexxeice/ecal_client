@@ -1,14 +1,18 @@
 require "ecal_client/version"
+require "ecal_client/api"
+require "ecal_client/api/response"
+require "ecal_client/api/base"
+require "ecal_client/api/organisation"
 
 module EcalClient
   class Configuration
-    attr_accessor :key, :secret
+    attr_accessor :key, :secret, :options
 
     def initialize
       self.key     = nil
       self.secret  = nil
       self.options = {}
-      set_default
+      set_defaults
     end
 
     def set_defaults
