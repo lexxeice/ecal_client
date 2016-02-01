@@ -5,14 +5,8 @@ describe EcalClient do
   KEY = "7adbab10934acf84648d87c71b65fac556a7a008205d2"
   SECRET = "xo6m8ea5"
 
-  EcalClient.configure do |config|
-    config.key = KEY
-    config.secret = SECRET
-    config.options = { verbose: false }
-  end
-
   before do
-    @api = EcalClient::Api.new
+    @api = EcalClient::Api.new(key: KEY, secret: SECRET)
   end
 
   describe "organisation" do

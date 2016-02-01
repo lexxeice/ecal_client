@@ -9,6 +9,14 @@ module EcalClient
     SUBSCRIPTION_WIDGET = "/subscription-widget/".freeze
     SUBSCRIBER          = "/subscriber/".freeze
 
+    def initialize(options = {})
+      key = options.delete(:key)
+      secret = options.delete(:secret)
+      EcalClient.configuration.key = key if key
+      EcalClient.configuration.secret = secret if secret
+      EcalClient.configuration.options.merge!(options)
+    end
+
     def organisation
       @organisation ||= Rest.new(endpoint_for(ORGANISATION), [:get, :post, :put])
     end
