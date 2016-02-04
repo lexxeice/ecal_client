@@ -15,7 +15,7 @@ describe EcalClient do
         company:   "Tinder",
         firstName: "James",
         lastName:  "Blunt",
-        email:     "ginger3@gmail.com"
+        email:     "ginger4@gmail.com"
       }
     end
 
@@ -35,6 +35,12 @@ describe EcalClient do
       it 'should create new organisation', vcr: '/organisation/post' do
         response = @api.organisation.post(params)
         expect(response.status).to eq(200)
+      end
+
+      it 'should return error', vcr: '/organisation/post_organisation_exists' do
+        response = @api.organisation.post(params)
+        expect(response.status).to eq(400)
+        expect(response.errors.empty?).to be false
       end
     end
 

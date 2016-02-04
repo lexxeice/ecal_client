@@ -17,6 +17,10 @@ module EcalClient
       @status_log ||= params['statusLong']
     end
 
+    def errors
+      @error ||= params['errors']
+    end
+
     def params
       @params ||= begin
                     JSON.parse(@response.body)

@@ -17,8 +17,8 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 400
+      message: Bad Request
     headers:
       Access-Control-Allow-Origin:
       - "*"
@@ -27,7 +27,7 @@ http_interactions:
       Content-Type:
       - application/json
       Date:
-      - Thu, 04 Feb 2016 05:52:49 GMT
+      - Thu, 04 Feb 2016 05:52:50 GMT
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Pragma:
@@ -35,24 +35,24 @@ http_interactions:
       Server:
       - Apache/2.2.31 (Amazon)
       Set-Cookie:
-      - AWSELB=333B2B5D06EE909EF35E92C5C246CA961A8A2D96A2BD82CAB651284DF0E79E31FDE4D442BF69119F72BD9CDE6BFA16FE02CAFF9259AD760FDFAE229FDD354BE6A1397754088F4B95BDC598D166CE7C4D6411561806;PATH=/
-      - PHPSESSID=781l690pl92ef51efb3qpa9ro2; path=/
+      - AWSELB=333B2B5D06EE909EF35E92C5C246CA961A8A2D96A2F7E0EE740B684F178CF5B0416EC6943022BF14FA7ABFF3A9AFE6430F435EE02632977EF6515E5E20610638D611A116D11BFF8FDB238B1366AE105E7931980441;PATH=/
+      - PHPSESSID=ohrfcd77jkbcb7j54md3mvlrh2; path=/
       Vary:
       - Accept-Encoding
       X-Ediary-Status:
-      - '200'
+      - '400'
       X-Ediary-Statusshort:
-      - OK
+      - Bad Request
       X-Powered-By:
       - PHP/5.3.29
       Content-Length:
-      - '215'
+      - '146'
       Connection:
       - keep-alive
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"200","statusLong":"OK","organisationId":"3288","publisherId":"11376","username":"ginger4@gmail.com","password":"58h2svwz","apiKey":"b8ecb7a64fa6749e7c5214ac587b5bce56b2e7318dbb0","apiSecret":"v2bc472y","dateExpiry":"2016-02-26
-        03:34:16"}'
+      string: '{"status":"400","statusLong":"Invalid Publisher Data","errors":["Email
+        [ginger4@gmail.com] already exists. Please try different email address"]}'
     http_version: 
-  recorded_at: Thu, 04 Feb 2016 05:52:49 GMT
+  recorded_at: Thu, 04 Feb 2016 05:52:50 GMT
 recorded_with: VCR 3.0.1
