@@ -2,6 +2,8 @@
 
 Ruby Client for [Ecal](http://ecal.com/).
 
+Ecal API documentation can be found [here](https://e-diary.atlassian.net/wiki/display/EAV/ECAL+API+V2+Home).
+
 ## Installation
 
 Add this line to your application's Gemfile:
