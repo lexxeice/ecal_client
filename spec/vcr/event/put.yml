@@ -54,4 +54,58 @@ http_interactions:
       string: '{"status":"200","statusLong":"OK","publisherId":"11319"}'
     http_version: 
   recorded_at: Fri, 29 Jan 2016 08:13:14 GMT
+- request:
+    method: put
+    uri: http://client.e-diary.com/apiv2/event/56ab1eee7f4b3fad35000008?apiKey=7adbab10934acf84648d87c71b65fac556a7a008205d2&apiSign=9f5997b6c301c0547f694090ff816936
+    body:
+      encoding: UTF-8
+      string: '{"alert":"5M"}'
+    headers:
+      User-Agent:
+      - Ecal Client SDK
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 03 Mar 2016 04:50:29 GMT
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - Apache/2.2.31 (Amazon)
+      Set-Cookie:
+      - AWSELB=2F55B1190AFFEB9572E69EA7C1FBB1713CA6B20FE46AE1D66567C940197DCE389480543582B42CEFF840BD33D91EABAF263260F4EB19B2787CBC295C0DC9A10FEB839A10BE3520C9A1FF46895786ED1FD6384A9B7A;PATH=/
+      - PHPSESSID=f4jecsmi7s68r6bnlmq111vej2; path=/
+      Vary:
+      - Accept-Encoding
+      X-Ediary-Status:
+      - '200'
+      X-Ediary-Statusshort:
+      - OK
+      X-Powered-By:
+      - PHP/5.3.29
+      Content-Length:
+      - '86'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"200","statusLong":"OK","eventId":"56ab1eee7f4b3fad35000008"}'
+    http_version: 
+  recorded_at: Thu, 03 Mar 2016 04:50:30 GMT
 recorded_with: VCR 3.0.1

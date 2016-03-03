@@ -152,7 +152,7 @@ describe EcalClient do
 
     describe "#put" do
       it 'should update the event', vcr: '/event/put' do
-        response = @api.publisher.put(id: "56ab1eee7f4b3fad35000008", alert: "5M")
+        response = @api.event.put(id: "56ab1eee7f4b3fad35000008", alert: "5M")
         expect(response.status).to eq(200)
       end
     end
