@@ -3,9 +3,12 @@ module EcalClient
 
     class Unsupported < StandardError; end
 
-    def initialize(endpoint, actions)
+    def initialize(endpoint, actions, options = {})
       @endpoint = endpoint
       @actions = actions
+      @key = options.delete(:key) || EcalClient.configuration.key
+      @secret = options.delete(:secret) || EcalClient.configuration.secret
+      EcalClient.configuration.options.merge!(options)
     end
 
     def get(options = {})

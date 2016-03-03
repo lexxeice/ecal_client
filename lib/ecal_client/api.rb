@@ -10,35 +10,31 @@ module EcalClient
     SUBSCRIBER          = "/subscriber/".freeze
 
     def initialize(options = {})
-      key = options.delete(:key)
-      secret = options.delete(:secret)
-      EcalClient.configuration.key = key if key
-      EcalClient.configuration.secret = secret if secret
-      EcalClient.configuration.options.merge!(options)
+      @options = options
     end
 
     def organisation
-      @organisation ||= Rest.new(endpoint_for(ORGANISATION), [:get, :post, :put])
+      @organisation ||= Rest.new(endpoint_for(ORGANISATION), [:get, :post, :put], @options)
     end
 
     def publisher
-      @publisher ||= Rest.new(endpoint_for(PUBLISHER), [:get, :put])
+      @publisher ||= Rest.new(endpoint_for(PUBLISHER), [:get, :put], @options)
     end
 
     def calendar
-      @calendar ||= Rest.new(endpoint_for(CALENDAR), [:get, :post, :put])
+      @calendar ||= Rest.new(endpoint_for(CALENDAR), [:get, :post, :put], @options)
     end
 
     def event
-      @event ||= Rest.new(endpoint_for(EVENT), [:get, :post, :put])
+      @event ||= Rest.new(endpoint_for(EVENT), [:get, :post, :put], @options)
     end
 
     def subscription_widget
-      @subscription_widget ||= Rest.new(endpoint_for(SUBSCRIPTION_WIDGET), [:get])
+      @subscription_widget ||= Rest.new(endpoint_for(SUBSCRIPTION_WIDGET), [:get], @options)
     end
 
     def subscriber
-      @subscriber ||= Rest.new(endpoint_for(SUBSCRIBER), [:get, :post, :put])
+      @subscriber ||= Rest.new(endpoint_for(SUBSCRIBER), [:get, :post, :put], @options)
     end
 
     private
