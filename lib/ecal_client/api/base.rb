@@ -5,7 +5,7 @@ require 'json'
 
 module EcalClient
   class Api::Base
-    API_ENDPOINT = "http://client.e-diary.com".freeze
+    API_ENDPOINT = "http://api.ecal.com".freeze
 
     protected
 
