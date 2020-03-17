@@ -33,7 +33,7 @@ module EcalClient
       params.merge(apiSign: api_sign(params, body))
     end
 
-    [:post, :get, :put].each do |method|
+    [:post, :get, :put, :delete].each do |method|
       define_method "#{method}_call" do |action, params, body, headers|
         params.merge!(apiKey: @key)
         connection.send("#{method}") do |req|

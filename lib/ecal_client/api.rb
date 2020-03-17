@@ -28,11 +28,11 @@ module EcalClient
     end
 
     def calendar
-      @calendar ||= Rest.new(endpoint_for(CALENDAR), [:get, :post, :put], credentials)
+      @calendar ||= Rest.new(endpoint_for(CALENDAR), [:get, :post, :put, :delete], credentials)
     end
 
     def event
-      @event ||= Rest.new(endpoint_for(EVENT), [:get, :post, :put], credentials)
+      @event ||= Rest.new(endpoint_for(EVENT), [:get, :post, :put, :delete], credentials)
     end
 
     def subscription_widget

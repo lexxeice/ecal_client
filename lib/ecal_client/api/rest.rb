@@ -34,6 +34,12 @@ module EcalClient
       Response.new(response)
     end
 
+    def delete(options)
+      raise Unsupported unless supported?(:delete)
+      response = delete_call(@endpoint, {}, options, headers)
+      Response.new(response)
+    end
+
     private
 
     def supported?(action)
